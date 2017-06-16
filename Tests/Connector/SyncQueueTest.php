@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Tests\Connectors;
+namespace Viserio\Component\Queue\Tests\Connector;
 
 use Exception;
 use Narrowspark\TestingHelper\Phpunit\MockeryTestCase;
@@ -8,8 +8,8 @@ use Opis\Closure\SerializableClosure;
 use Psr\Container\ContainerInterface;
 use stdClass;
 use Viserio\Component\Contracts\Encryption\Encrypter as EncrypterContract;
-use Viserio\Component\Queue\Connectors\SyncQueue;
-use Viserio\Component\Queue\Jobs\SyncJob;
+use Viserio\Component\Queue\Connector\SyncQueue;
+use Viserio\Component\Queue\Job\SyncJob;
 use Viserio\Component\Queue\QueueClosure;
 use Viserio\Component\Queue\Tests\Fixture\FailingSyncQueueHandler;
 use Viserio\Component\Queue\Tests\Fixture\SyncQueueHandler;

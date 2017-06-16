@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Tests\Connectors;
+namespace Viserio\Component\Queue\Tests\Connector;
 
 use Aws\Result;
 use Aws\Sqs\SqsClient;
 use Cake\Chronos\Chronos;
 use Narrowspark\TestingHelper\Phpunit\MockeryTestCase;
 use Psr\Container\ContainerInterface;
-use Viserio\Component\Queue\Connectors\SqsQueue;
-use Viserio\Component\Queue\Jobs\SqsJob;
+use Viserio\Component\Queue\Connector\SqsQueue;
+use Viserio\Component\Queue\Job\SqsJob;
 
 class SqsQueueTest extends MockeryTestCase
 {

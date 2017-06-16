@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Tests\Jobs;
+namespace Viserio\Component\Queue\Tests\Job;
 
 use Narrowspark\TestingHelper\Phpunit\MockeryTestCase;
 use Pheanstalk\Job as PheanstalkJob;
 use Pheanstalk\Pheanstalk;
 use Psr\Container\ContainerInterface;
 use stdClass;
-use Viserio\Component\Queue\Jobs\BeanstalkdJob;
+use Viserio\Component\Queue\Job\BeanstalkdJob;
 use Viserio\Component\Queue\Tests\Fixture\BeanstalkdJobTestFailed;
 
 class BeanstalkdJobTest extends MockeryTestCase

@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Jobs;
+namespace Viserio\Component\Queue\Job;
 
 use Pheanstalk\Job as PheanstalkJob;
 use Pheanstalk\Pheanstalk;

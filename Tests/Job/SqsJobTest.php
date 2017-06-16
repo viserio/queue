@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Tests\Jobs;
+namespace Viserio\Component\Queue\Tests\Job;
 
 use Aws\Sqs\SqsClient;
 use Narrowspark\TestingHelper\Phpunit\MockeryTestCase;
 use Psr\Container\ContainerInterface;
 use stdClass;
-use Viserio\Component\Queue\Jobs\SqsJob;
+use Viserio\Component\Queue\Job\SqsJob;
 
 class SqsJobTest extends MockeryTestCase
 {

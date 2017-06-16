@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Tests\Connectors;
+namespace Viserio\Component\Queue\Tests\Connector;
 
 use Cake\Chronos\Chronos;
 use Narrowspark\TestingHelper\Phpunit\MockeryTestCase;
 use Predis\Client;
 use Viserio\Component\Contracts\Encryption\Encrypter as EncrypterContract;
-use Viserio\Component\Queue\Connectors\RedisQueue;
+use Viserio\Component\Queue\Connector\RedisQueue;
 
 class RedisQueueTest extends MockeryTestCase
 {

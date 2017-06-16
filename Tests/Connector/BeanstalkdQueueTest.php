@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Tests\Connectors;
+namespace Viserio\Component\Queue\Tests\Connector;
 
 use Narrowspark\TestingHelper\Phpunit\MockeryTestCase;
 use Pheanstalk\Job;
 use Pheanstalk\Pheanstalk;
 use Psr\Container\ContainerInterface;
 use Viserio\Component\Contracts\Encryption\Encrypter as EncrypterContract;
-use Viserio\Component\Queue\Connectors\BeanstalkdQueue;
-use Viserio\Component\Queue\Jobs\BeanstalkdJob;
+use Viserio\Component\Queue\Connector\BeanstalkdQueue;
+use Viserio\Component\Queue\Job\BeanstalkdJob;
 
 class BeanstalkdQueueTest extends MockeryTestCase
 {

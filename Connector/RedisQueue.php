@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Connectors;
+namespace Viserio\Component\Queue\Connector;
 
 use Narrowspark\Arr\Arr;
 use Predis\Client;
-use Viserio\Component\Queue\Jobs\RedisJob;
+use Viserio\Component\Queue\Job\RedisJob;
 use Viserio\Component\Support\Str;
 
 class RedisQueue extends AbstractQueue

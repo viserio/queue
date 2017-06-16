@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Connectors;
+namespace Viserio\Component\Queue\Connector;
 
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Exception\AMQPRuntimeException;
 use PhpAmqpLib\Message\AMQPMessage;
 use PhpAmqpLib\Wire\AMQPTable;
-use Viserio\Component\Queue\Jobs\RabbitMQJob;
+use Viserio\Component\Queue\Job\RabbitMQJob;
 
 class RabbitMQQueue extends AbstractQueue
 {

@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Connectors;
+namespace Viserio\Component\Queue\Connector;
 
 use ErrorException;
 use ParseError;
 use Throwable;
 use TypeError;
 use Viserio\Component\Contracts\Queue\Job as JobContract;
-use Viserio\Component\Queue\Jobs\SyncJob;
+use Viserio\Component\Queue\Job\SyncJob;
 
 class SyncQueue extends AbstractQueue
 {

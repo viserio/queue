@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Jobs;
+namespace Viserio\Component\Queue\Job;
 
 use PhpAmqpLib\Channel\AMQPChannel;
 use PhpAmqpLib\Message\AMQPMessage;
 use Psr\Container\ContainerInterface;
-use Viserio\Component\Queue\Connectors\RabbitMQQueue;
+use Viserio\Component\Queue\Connector\RabbitMQQueue;
 
 class RabbitMQJob extends AbstractJob
 {
     /**
      * The PRabbitMQQueue instance.
      *
-     * @var \Viserio\Component\Queue\Connectors\RabbitMQQueue
+     * @var \Viserio\Component\Queue\Connector\RabbitMQQueue
      */
     protected $connection;
 
@@ -33,11 +33,11 @@ class RabbitMQJob extends AbstractJob
     /**
      * Create a new job instance.
      *
-     * @param \Psr\Container\ContainerInterface                 $container
-     * @param \Viserio\Component\Queue\Connectors\RabbitMQQueue $connection
-     * @param \PhpAmqpLib\Channel\AMQPChannel                   $channel
-     * @param string                                            $queue
-     * @param \PhpAmqpLib\Message\AMQPMessage                   $message
+     * @param \Psr\Container\ContainerInterface                $container
+     * @param \Viserio\Component\Queue\Connector\RabbitMQQueue $connection
+     * @param \PhpAmqpLib\Channel\AMQPChannel                  $channel
+     * @param string                                           $queue
+     * @param \PhpAmqpLib\Message\AMQPMessage                  $message
      */
     public function __construct(
         ContainerInterface $container,
@@ -128,7 +128,7 @@ class RabbitMQJob extends AbstractJob
     /**
      * Get the underlying queue driver instance.
      *
-     * @return \Viserio\Component\Queue\Connectors\RabbitMQQueue
+     * @return \Viserio\Component\Queue\Connector\RabbitMQQueue
      */
     public function getRabbitMQQueue(): RabbitMQQueue
     {

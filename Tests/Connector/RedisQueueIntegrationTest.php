@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Tests\Connectors;
+namespace Viserio\Component\Queue\Tests\Connector;
 
 use Defuse\Crypto\Key;
 use Exception;
@@ -8,7 +8,7 @@ use Narrowspark\TestingHelper\Phpunit\MockeryTestCase;
 use Predis\Client;
 use Psr\Container\ContainerInterface;
 use Viserio\Component\Encryption\Encrypter;
-use Viserio\Component\Queue\Connectors\RedisQueue;
+use Viserio\Component\Queue\Connector\RedisQueue;
 use Viserio\Component\Queue\Tests\Fixture\RedisQueueIntegrationJob;
 
 class RedisQueueIntegrationTest extends MockeryTestCase
@@ -19,7 +19,7 @@ class RedisQueueIntegrationTest extends MockeryTestCase
     private $redis;
 
     /**
-     * @var \Viserio\Component\Queue\Connectors\RedisQueue
+     * @var \Viserio\Component\Queue\Connector\RedisQueue
      */
     private $queue;
 

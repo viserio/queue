@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Tests\Connectors;
+namespace Viserio\Component\Queue\Tests\Connector;
 
 use Narrowspark\TestingHelper\Phpunit\MockeryTestCase;
 use PhpAmqpLib\Channel\AMQPChannel;
@@ -8,8 +8,8 @@ use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
 use Psr\Container\ContainerInterface;
 use Viserio\Component\Contracts\Encryption\Encrypter as EncrypterContract;
-use Viserio\Component\Queue\Connectors\RabbitMQQueue;
-use Viserio\Component\Queue\Jobs\RabbitMQJob;
+use Viserio\Component\Queue\Connector\RabbitMQQueue;
+use Viserio\Component\Queue\Job\RabbitMQJob;
 
 class RabbitMQQueueTest extends MockeryTestCase
 {

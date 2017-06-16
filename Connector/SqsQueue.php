@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Connectors;
+namespace Viserio\Component\Queue\Connector;
 
 use Aws\Sqs\SqsClient;
-use Viserio\Component\Queue\Jobs\SqsJob;
+use Viserio\Component\Queue\Job\SqsJob;
 
 class SqsQueue extends AbstractQueue
 {

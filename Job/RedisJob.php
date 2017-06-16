@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Jobs;
+namespace Viserio\Component\Queue\Job;
 
 use Narrowspark\Arr\Arr;
 use Psr\Container\ContainerInterface;
-use Viserio\Component\Queue\Connectors\RedisQueue;
+use Viserio\Component\Queue\Connector\RedisQueue;
 
 class RedisJob extends AbstractJob
 {
     /**
      * The Redis queue instance.
      *
-     * @var \Viserio\Component\Queue\Connectors\RedisQueue
+     * @var \Viserio\Component\Queue\Connector\RedisQueue
      */
     protected $redis;
 
@@ -39,11 +39,11 @@ class RedisJob extends AbstractJob
     /**
      * Create a new job instance.
      *
-     * @param \Psr\Container\ContainerInterface              $container
-     * @param \Viserio\Component\Queue\Connectors\RedisQueue $redis
-     * @param string                                         $job
-     * @param string                                         $reserved
-     * @param string                                         $queue
+     * @param \Psr\Container\ContainerInterface             $container
+     * @param \Viserio\Component\Queue\Connector\RedisQueue $redis
+     * @param string                                        $job
+     * @param string                                        $reserved
+     * @param string                                        $queue
      */
     public function __construct(
         ContainerInterface $container,
@@ -115,7 +115,7 @@ class RedisJob extends AbstractJob
     /**
      * Get the underlying queue driver instance.
      *
-     * @return \Viserio\Component\Queue\Connectors\RedisQueue
+     * @return \Viserio\Component\Queue\Connector\RedisQueue
      */
     public function getRedisQueue()
     {

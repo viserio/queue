@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Tests\Jobs;
+namespace Viserio\Component\Queue\Tests\Job;
 
 use Narrowspark\TestingHelper\Phpunit\MockeryTestCase;
 use Psr\Container\ContainerInterface;
 use stdClass;
-use Viserio\Component\Queue\Connectors\RedisQueue;
-use Viserio\Component\Queue\Jobs\RedisJob;
+use Viserio\Component\Queue\Connector\RedisQueue;
+use Viserio\Component\Queue\Job\RedisJob;
 
 class RedisJobTest extends MockeryTestCase
 {

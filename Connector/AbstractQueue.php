@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Connectors;
+namespace Viserio\Component\Queue\Connector;
 
 use Cake\Chronos\Chronos;
 use Closure;

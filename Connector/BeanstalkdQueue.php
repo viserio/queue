@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Queue\Connectors;
+namespace Viserio\Component\Queue\Connector;
 
 use Pheanstalk\Job as PheanstalkJob;
 use Pheanstalk\Pheanstalk;
-use Viserio\Component\Queue\Jobs\BeanstalkdJob;
+use Viserio\Component\Queue\Job\BeanstalkdJob;
 
 class BeanstalkdQueue extends AbstractQueue
 {
